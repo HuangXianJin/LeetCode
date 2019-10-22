@@ -1,6 +1,18 @@
+import java.math.BigDecimal;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Main {
 
+    private final static Lock lock = new ReentrantLock();
+
     public static void main(String[] args) {
-        System.out.println("dev");
+        try {
+            lock.tryLock();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
     }
 }

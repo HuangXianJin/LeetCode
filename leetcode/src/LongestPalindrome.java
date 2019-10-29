@@ -4,7 +4,8 @@
 public class LongestPalindrome {
 
     public static void main(String[] args) {
-        System.out.println();
+        int i = 1;
+        System.out.println((++i)+(++i));
     }
     public String longestPalindrome(String s) {
         String temp="";

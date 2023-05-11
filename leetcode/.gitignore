@@ -45,6 +45,7 @@ nbdist/
 
 ### JRebel ###
 rebel.xml
+.class
+/out/
 
-application-my.yaml
 
